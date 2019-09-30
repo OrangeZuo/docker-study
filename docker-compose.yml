@@ -22,3 +22,5 @@ services:
       - ./data/nginx/my.conf:/etc/nginx/conf.d/my.conf
     ports:
       - "5000:80"
+    links:
+      - php-fpm
