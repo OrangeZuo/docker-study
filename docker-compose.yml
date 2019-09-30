@@ -21,4 +21,4 @@ services:
       - ./data/app:/data/app
       - ./data/nignx/my.conf:/etc/nginx/conf.d/my.conf
     ports:
-      - "80:80"
+      - "5000:80"
