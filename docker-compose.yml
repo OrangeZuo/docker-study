@@ -6,6 +6,7 @@ services:
       - ./data/app:/data/app
     links:
       - mysql
+    working_dir: /data/app/blog
   mysql:
     image: mysql:5.7
     volumes:
