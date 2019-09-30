@@ -19,6 +19,6 @@ services:
     image: nginx
     volumes:
       - ./data/app:/data/app
-      - ./data/nignx/my.conf:/etc/nginx/conf.d/my.conf
+      - ./data/nginx/my.conf:/etc/nginx/conf.d/my.conf
     ports:
       - "5000:80"
