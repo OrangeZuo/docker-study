@@ -21,6 +21,8 @@ services:
     volumes:
       - ./data/app:/data/app
       - ./data/nginx/my.conf:/etc/nginx/conf.d/my.conf
+      - ./data/nginx/laravel.access.log:/var/log/nginx/laravel.access.log
+      - ./data/nginx/error.log:/var/log/nginx/error.log
     ports:
       - "5000:80"
     links:
